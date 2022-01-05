@@ -1,3 +1,4 @@
+bearer_token = "AAAAAAAAAAAAAAAAAAAAADYAVwEAAAAAbms9feUASzO6soHV24maBisHqZk%3DMgcDcHh2x6FfQ55n3SMPhj5Zz77m1mzWjZmwh0INbFUWuw9Y57"
 consumer_key = "ftGsrZHjYWgRaAXDaTtUsy71s"
 consumer_secret = "3LGA9ao0hvRGcbayNwzctcRAgADHlQGIT4qjlu1hH65JkAlOYY"
 access_token_key = "1104094044572008450-JrsOAAwOGa1fBgWdB46DbhROaVfIEM"
