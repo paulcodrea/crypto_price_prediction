@@ -2,3 +2,5 @@
 2022_dataset/BTCUSD-Market_Price-2021.csv
 2022_dataset/BTCUSD-Market_Price-2021.csv
 __pycache__/config.cpython-39.pyc
+*.csv
+*.csv
