@@ -1,6 +1,0 @@
-bearer_token = "AAAAAAAAAAAAAAAAAAAAADYAVwEAAAAAbms9feUASzO6soHV24maBisHqZk%3DMgcDcHh2x6FfQ55n3SMPhj5Zz77m1mzWjZmwh0INbFUWuw9Y57"
-consumer_key = "ftGsrZHjYWgRaAXDaTtUsy71s"
-consumer_secret = "3LGA9ao0hvRGcbayNwzctcRAgADHlQGIT4qjlu1hH65JkAlOYY"
-access_token_key = "1104094044572008450-JrsOAAwOGa1fBgWdB46DbhROaVfIEM"
-access_token_secret = "z1NVebSQZNcli3AWTf2WCRZzbfh90yf3YVDzmnXeFY7yF"
-cryptocompare_key = "2505dbe622f0828b75b9fce3b24781f35bd23b25e6cf0ca4b118d76a9bb9e6aa"
