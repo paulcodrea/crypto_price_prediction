@@ -1,4 +1,5 @@
-# Can public sentiment improve cryptocurrency price forecasting? With a particular interest: FOMO in buying cryptocurrency
+# Can public sentiment improve cryptocurrency price forecasting? 
+With a particular interest: FOMO in buying cryptocurrency
 
 > The University of Manchester, School of Computer Science
 > A thesis submitted in fulfilment of the requirements for the degree of BSc (Hons) Computer Science w/ Business and Management
@@ -81,7 +82,7 @@ In the second scenario, Elon’s non-informative tweet ”I will eat a happy mea
 @McDonalds accepts Dogecoin” (Musk, 2022a) immediately resulted in a 3.38 per cent (or 75.11
 million USD) price increase. The DOGE price escalation had a prolonged effect, resulting in pinnacle of 7.88 per cent that lasted for 31 hours. This market movement might have been influenced by McDonald’s officials as well. The fast food company challenged Elon Musk with a similarly non-informative tweet, "only if @tesla accepts grimacecoin".
 
-![Scenario 2 Trading Volume and Sentiment Score](screenshots/DOGE%20trading%20volume%20%26%20Sentiment%20Score%20(scenario%202).png
+![Scenario 2 Trading Volume and Sentiment Score](screenshots/DOGE%20trading%20volume%20%26%20Sentiment%20Score%20(scenario%202).png)
 
 ## Results
 
