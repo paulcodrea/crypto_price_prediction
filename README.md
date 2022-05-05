@@ -1,4 +1,8 @@
-# Dissertation project - COMP30030 3rd year project 
+# Can public sentiment improve cryptocurrency price forecasting? 
+# With a particular interest: FOMO in buying cryptocurrency
+
+The University of Manchester, School of Computer Science
+A thesis submitted in fulfilment of the requirements for the degree of BSc (Hons) Computer Science w/ Business and Management
 
 ## Abstract
 
@@ -23,7 +27,14 @@ The ideal scenario would be to set the hyperparameters as to achieve:
 ## Achievements
 
 In this project, I have successfully implemented one state-of-the-art long short-term memory ar- chitecture (Shen and Shafiq, 2020) and two machine learning models, Random Forest and Support Vector regression. Additionally, I trained the models effectively using several datasets and presented a score-based data collection constructed of people’s sentiment and engagement indicators derived from Twitter. This new dataset enhanced the performance of the state-of-the-art neural network architecture that predicts Bitcoin prices. 
-Another major accomplishment was establishing a possible association between the engagement score, market price changes and trading volumes in response to public statements made by influential figures. The crypto market’s movements were compared to public sentiment in order to determine whether independent traders are engaging in cryptocurrency investments out of fear of losing out on potentially profitable opportunities
+Another major accomplishment was establishing a possible association between the engagement score, market price changes and trading volumes in response to public statements made by influential figures. The crypto market’s movements were compared to public sentiment in order to determine whether independent traders are engaging in cryptocurrency investments out of fear of losing out on potentially profitable opportunities.
+
+## Dataset
+
+The project uses Twitter and CryptoCompare APIs and the forecasting models use datasets containing historical prices and sentiment scores from 27-02-2022, 11.00 AM to 07-03-2022, 00.00 AM 
+Following figure depicts the fluctuations in the Bitcoin price over the specified time
+period.
+![BTC price](C:\Users\paulc\OneDrive\Desktop\FOMO_dissertation\dissertation\screenshots\all_dataset_BTC.png)
 
 
 ## Results
