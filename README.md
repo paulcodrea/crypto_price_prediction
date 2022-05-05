@@ -1,5 +1,4 @@
-# Can public sentiment improve cryptocurrency price forecasting? 
-# With a particular interest: FOMO in buying cryptocurrency
+# Can public sentiment improve cryptocurrency price forecasting? With a particular interest: FOMO in buying cryptocurrency
 
 The University of Manchester, School of Computer Science
 A thesis submitted in fulfilment of the requirements for the degree of BSc (Hons) Computer Science w/ Business and Management
@@ -34,7 +33,7 @@ Another major accomplishment was establishing a possible association between the
 The project uses Twitter and CryptoCompare APIs and the forecasting models use datasets containing historical prices and sentiment scores from 27-02-2022, 11.00 AM to 07-03-2022, 00.00 AM 
 Following figure depicts the fluctuations in the Bitcoin price over the specified time
 period.
-![BTC price](C:\Users\paulc\OneDrive\Desktop\FOMO_dissertation\dissertation\screenshots\all_dataset_BTC.png)
+![BTC price](screenshots/all_dataset_BTC.png)
 
 
 ## Results
