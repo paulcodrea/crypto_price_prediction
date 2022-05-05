@@ -52,16 +52,36 @@ Since there are Twitter users with no followers or posts with no engagement, we 
 
 LSTM trained on historical prices and engagement score dataset.
 
-![LSTM_dataset3](screenshots/LSTM_BTC_price-and-score_55-5-40.png)
+![LSTM_dataset3](screenshots/LSTM_55-5-40%20(epochs%2040%2C%20batch4).png)
 
 RF trained on historical prices and engagement score dataset.
 
-![RF_dataset3](screenshots/Random-Forest-regression_97-accuracy.png)
+![RF_dataset3](screenshots/Random%20Forest%20Regression%20on%20BTC%20dataset%20(Close%20price%20and%20engagement%20score)%20-%20grid.png)
 
 SVR trained on historical prices and engagement score dataset.
 
-![SVR_dataset3](screenshots/Support-vector-regression_70-accuracy.png)
+![SVR_dataset3](screenshots/Support%20Vector%20Regression%20on%20BTC%20dataset%20(Close%20price%20and%20engagement%20score)%20-%20grid.png)
 
+
+## Analysing Fear of missing out
+
+Scenario 1:
+In the first scenario, Elon Musk tweeted on January 14th at 6.18 AM (UTC) that “Tesla merch
+buyable with Dogecoin” (Musk, 2022b). In other words, Tesla would accept customers that are
+willing to pay for mini models of electric cars, Tesla’s “Giga Texas” belt buckle or the firm’s t-shirt (not electric vehicles, only goods) with the meme-based cryptocurrency. Musk’s Twitter announcement came late compared to the rumours already circulating on social media.
+
+![Scenario 1 Tweet](screenshots/DOGE%20price%20Jan%2013%20-%2025th%20(Scenario%201).png)
+
+![Scenario 1 Reaction (engagement score)](screenshots/DOGE%20price%20%26%20Sentiment%20Score%20(Scenario%201).png)
+
+![Scenario 1 Reaction (compound sentiment)](screenshots/DOGE%20price%20%26%20Compound%20Sentiment%20(Scenario%201).png)
+
+Scenario 2:
+In the second scenario, Elon’s non-informative tweet ”I will eat a happy meal on television if
+@McDonalds accepts Dogecoin” (Musk, 2022a) immediately resulted in a 3.38 per cent (or 75.11
+million USD) price increase. The DOGE price escalation had a prolonged effect, resulting in pinnacle of 7.88 per cent that lasted for 31 hours. This market movement might have been influenced by McDonald’s officials as well. The fast food company challenged Elon Musk with a similarly non-informative tweet, "only if @tesla accepts grimacecoin".
+
+![Scenario 2 Trading Volume and Sentiment Score](screenshots/DOGE%20trading%20volume%20%26%20Sentiment%20Score%20(scenario%202).png
 
 ## Results
 
