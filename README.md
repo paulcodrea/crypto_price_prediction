@@ -46,13 +46,26 @@ The following two metrics count towards the score-based dataset:
 - retweet count (or tweetr ) - The number of times the tweet has been retweeted.
 - followers count (or tweetf ) - The number of followers the tweet’s author has.
 
-Since there are Twitter users with no followers or posts with no engagement, we add 1 to each metric before normalisation to avoid division by zero. Next, we extract the sentiment value ($s$) generated using VADER. However, since VADER might return 0 for neutral tweets\footnote{VADER returns values between -1 and 1, negative and positive emotion, respectively}, we want to avoid a final score of zero. Because a neutral post is always better than no post, we assign to a neutral sentiment a minimum value, 
-![equation](s = 1e^{-3} (or 1 \times 10^{-3}))
+Since there are Twitter users with no followers or posts with no engagement, we add 1 to each metric before normalisation to avoid division by zero. Next, we extract the sentiment value ($s$) generated using VADER. However, since VADER might return 0 for neutral tweets\footnote{VADER returns values between -1 and 1, negative and positive emotion, respectively}, we want to avoid a final score of zero. Because a neutral post is always better than no post, we assign to a neutral sentiment a minimum value s = 1e^{-3}.
+
+## Experiments
+
+LSTM trained on historical prices and engagement score dataset.
+
+![LSTM_dataset3](screenshots/LSTM_BTC_price-and-score_55-5-40.png)
+
+RF trained on historical prices and engagement score dataset.
+
+![RF_dataset3](screenshots/Random-Forest-regression_97-accuracy.png)
+
+SVR trained on historical prices and engagement score dataset.
+
+![SVR_dataset3](screenshots/Support-vector-regression_70-accuracy.png)
+
 
 ## Results
 
 The report identifies that the machine learning models outperform the recurrent neural network architecture in the cryptocurrency price prediction task. Especially the Random Forest (RF) model trained on BTC historical price in conjunction with engagement score showed a Pearson’s correlation coefficient of 0.9967 between actual values and forecasted values. Regarding the particular interest of the research of identifying a potential correlation between the emotion-focused reaction of investors and Dogecoin price movements, the report showed a scenario in which the novel dataset was able to reflect a possible PCC of 0.9868 within a 3 hours interval. The novel dataset that incorporates the engagement metrics alongside the compound value of the sentiment showed good performance in both objectives of the report in training models and reflected a possible relation between Fear of missing out and DOGE price fluctuations
-
 
 
 
