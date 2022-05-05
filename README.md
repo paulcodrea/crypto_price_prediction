@@ -1,6 +1,39 @@
 # Dissertation project - COMP30030 3rd year project 
 
-Abstract
+## Abstract
 
-The purpose of this project is to analyse peoples’ sentiment towards cryptocurrencies extracted from Twitter posts and predict market price movements. In the present day, mass public reactions can be depicted from social media channels. Especially, Twitter has become one of the mainstream social media platforms for user-generated content (Abbasi, et al., 2014). 
-Cryptocurrencies have become a popular topic for millions of people in the last 5 years due to unprecedented returns. Further, there is an increase of young amateur investors in cryptocurrencies each day. A particular interest for this project is identifying to what extent amateur investors are driven by fear-of-missing-out (FOMO) in buying cryptocurrency assets. In the financial trading world, FOMO refers to the fear that an investor feels when missing out on a potentially profitable investment (Samuelsson, 2022).
+This project aims to build a neural network architecture and two machine learning models to predict future cryptocurrency prices and identify to what extent sentiment improves the accuracy of the models. The recurrent neural network selected for this project is a long short-term memory. The machine learning algorithms are Random Forest and Support Vector Machine, which will perform a regression task. The models are trained on three distinct datasets to evaluate the prediction accuracy. The datasets consist of historical Bitcoin price independently, Bitcoin price in conjunction with the compound value of sentiment, and Bitcoin price in combination with engagement score. This thesis proposes a novel dataset that weighs people’s sentiment based on engagement metrics extracted from Twitter. The dataset aims to enhance the performance of the forecasting models that predict Bitcoin prices. Furthermore, the project is interested in identifying to what extent unskilled investors are driven by Fear of missing out on buying cryptocurrency assets. Fear of missing out on investment is reflected by an emotional reaction from the fear of potentially losing profitable scenarios. Past research shows that various individuals benefit from unanticipated gains, and an expansion of up to 90% of amateur investors losing millions of dollars in speculative investments is identified (Barber et al., 2008). The paper investigates a potential correlation between Dogecoin price fluctuations, trading volumes, and the Twitter mass sentiment when Elon Musk tweets about this digital asset.
+
+
+## Disclaimer
+
+In mid-April 2022, Elon Musk threatened to and then bought Twitter (Hirsch et al., 2022). His Twitter audience grew by roughly 2.5 million users (2.4 per cent) in less than two days of the event (SocialTracker, 2022). Most of this paper was written before this event.
+
+
+## Aims and Objectives
+
+The aim of the thesis is to build a neural network to predict future cryptocurrency prices and identify to what extent sentiment improves the model’s accuracy. The artificial Recurrent Neural Network (RNN) selected for this project is a long short-term memory model. The network is trained on multiple data collections to analyse and compare the effect of Twitter sentiment on the model’s performance. For sentiment extraction, the objective is to quantify the rate of positiveness or negativeness for a piece of text sourced from Twitter. The script uses Twitter API to scrape filtered posts on a specific word, hashtag or token (i.e. #BTC, bitcoin). The code extracts the sentiment after a process of tokenisation and ‘text cleaning’. Afterwards, the sentiment value shows a decimal between [-1,1], meaning [negative, positive], where zero is neutral. The sentiment related to each Twitter text piece is averaged per hour since the LSTM model uses historical cryptocurrency prices reported hourly. During the LSTM model’s optimisation stage, the objective is to increase the accuracy of the model by measuring the following performance metrics: training and validation loss, Mean square error (MSE), Mean absolute error (MAE), Root-mean-square error (RMSE), Mean Absolute Percentage Error (MAPE) and Pearson’s correlation coefficient (PCC) (including time lag). 
+
+The ideal scenario would be to set the hyperparameters as to achieve:
+1. The lowest MSE, MAE, RMSE, MAPE.
+2. The lowest training and validation loss.
+3. The highest Pearson’s correlation coefficient (PCC). The project attempts to calculate the highest PCC based on a lag. If the lag is different from zero, it shifts the predicted price to align with the actual price and maximise the PCC value.
+
+
+## Achievements
+
+In this project, I have successfully implemented one state-of-the-art long short-term memory ar- chitecture (Shen and Shafiq, 2020) and two machine learning models, Random Forest and Support Vector regression. Additionally, I trained the models effectively using several datasets and presented a score-based data collection constructed of people’s sentiment and engagement indicators derived from Twitter. This new dataset enhanced the performance of the state-of-the-art neural network architecture that predicts Bitcoin prices. 
+Another major accomplishment was establishing a possible association between the engagement score, market price changes and trading volumes in response to public statements made by influential figures. The crypto market’s movements were compared to public sentiment in order to determine whether independent traders are engaging in cryptocurrency investments out of fear of losing out on potentially profitable opportunities
+
+
+## Results
+
+The report identifies that the machine learning models outperform the recurrent neural network architecture in the cryptocurrency price prediction task. Especially the Random Forest (RF) model trained on BTC historical price in conjunction with engagement score showed a Pearson’s correlation coefficient of 0.9967 between actual values and forecasted values. Regarding the particular interest of the research of identifying a potential correlation between the emotion-focused reaction of investors and Dogecoin price movements, the report showed a scenario in which the novel dataset was able to reflect a possible PCC of 0.9868 within a 3 hours interval. The novel dataset that incorporates the engagement metrics alongside the compound value of the sentiment showed good performance in both objectives of the report in training models and reflected a possible relation between Fear of missing out and DOGE price fluctuations
+
+
+
+
+## References:
+1. Barber, B. M., Lee, Y.-T., Liu, Y.-J. and Odean, T. (2008), ‘Just how much do individual investors lose by trading?’, Review of Financial Studies 22(2), 609–632
+2. Hirsch, L., Isaac, M. and Conger, K. (2022), ‘Twitter nears a deal to sell itself to elon musk’. URL: https://www.nytimes.com/2022/04/24/technology/twitter-board-elon-musk.html
+3. SocialTracker (2022), ‘Elon musk twitter stats and analytics (@elonmusk)’. URL: https://www.socialtracker.io/twitter/elonmusk/
