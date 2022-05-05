@@ -1,7 +1,7 @@
 # Can public sentiment improve cryptocurrency price forecasting? With a particular interest: FOMO in buying cryptocurrency
 
-The University of Manchester, School of Computer Science
-A thesis submitted in fulfilment of the requirements for the degree of BSc (Hons) Computer Science w/ Business and Management
+> The University of Manchester, School of Computer Science
+> A thesis submitted in fulfilment of the requirements for the degree of BSc (Hons) Computer Science w/ Business and Management
 
 ## Abstract
 
@@ -28,13 +28,26 @@ The ideal scenario would be to set the hyperparameters as to achieve:
 In this project, I have successfully implemented one state-of-the-art long short-term memory ar- chitecture (Shen and Shafiq, 2020) and two machine learning models, Random Forest and Support Vector regression. Additionally, I trained the models effectively using several datasets and presented a score-based data collection constructed of people’s sentiment and engagement indicators derived from Twitter. This new dataset enhanced the performance of the state-of-the-art neural network architecture that predicts Bitcoin prices. 
 Another major accomplishment was establishing a possible association between the engagement score, market price changes and trading volumes in response to public statements made by influential figures. The crypto market’s movements were compared to public sentiment in order to determine whether independent traders are engaging in cryptocurrency investments out of fear of losing out on potentially profitable opportunities.
 
+## Project pipeline
+![Project pipeline](screenshots/methodology.png)
+
 ## Dataset
 
-The project uses Twitter and CryptoCompare APIs and the forecasting models use datasets containing historical prices and sentiment scores from 27-02-2022, 11.00 AM to 07-03-2022, 00.00 AM 
+The project uses Twitter and CryptoCompare APIs and the forecasting models use datasets containing historical prices and sentiment scores from 27-02-2022, 11.00 AM to 07-03-2022, 00.00 AM.
 Following figure depicts the fluctuations in the Bitcoin price over the specified time
 period.
 ![BTC price](screenshots/all_dataset_BTC.png)
 
+## Score-based dataset (using engagement metrics)
+
+The engagement rate is calculated by examining the number of followers, likes, and impressions received by a social media post. This article proposes a score-based dataset that weighs each post’s sentiment according to its level of engagement.
+
+The following two metrics count towards the score-based dataset:
+- retweet count (or tweetr ) - The number of times the tweet has been retweeted.
+- followers count (or tweetf ) - The number of followers the tweet’s author has.
+
+Since there are Twitter users with no followers or posts with no engagement, we add 1 to each metric before normalisation to avoid division by zero. Next, we extract the sentiment value ($s$) generated using VADER. However, since VADER might return 0 for neutral tweets\footnote{VADER returns values between -1 and 1, negative and positive emotion, respectively}, we want to avoid a final score of zero. Because a neutral post is always better than no post, we assign to a neutral sentiment a minimum value, 
+![equation](s = 1e^{-3} (or 1 \times 10^{-3}))
 
 ## Results
 
